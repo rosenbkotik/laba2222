@@ -1,1 +1,1 @@
-git remote 
+https://github.com/rosenbkotik/laba2222.git
