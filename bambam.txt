@@ -1,0 +1,30 @@
+
+function removeElement(arr, index) {
+ arr.splice(index, 1);
+}
+ 
+document.write("<h3>6. Удалили элемент с индексом 0</h3>");
+removeElement(arr1, 0);
+printArray(arr1);
+ 
+document.write("Первый массив: ");
+printArray(arr1);
+document.write("Второй массив: ");
+printArray(arr2);
+
+
+function getMostExpensive(list) {
+ let best = list[0];
+ 
+ for (let i = 1; i < list.length; i++) {
+   if (list[i].count * list[i].price > best.count * best.price) {
+     best = list[i];
+   }
+ }
+ 
+ return best;
+}
+ 
+document.write("<h3>16. Самая дорогая покупка</h3>");
+let expensive = getMostExpensive(receipt);
+document.write(expensive.name + " - " + expensive.count * expensive.price + "<br>");
